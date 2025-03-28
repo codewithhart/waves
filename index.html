@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Water Wave Energy Converter - Science Fair</title>
+    <title>Engineering a Functional Wave Energy Prototype - Science Fair</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
     <style>
         body {
@@ -21,22 +21,26 @@
         h1 {
             font-size: 2.5em;
         }
-        .container {
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             padding: 40px;
+            gap: 30px;
         }
-        .ar-button {
-            display: inline-block;
-            background-color: #00838f;
-            color: white;
-            padding: 15px 25px;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-top: 20px;
-            font-size: 1.2em;
-            transition: background-color 0.3s;
+        .container {
+            max-width: 500px;
         }
-        .ar-button:hover {
-            background-color: #005662;
+        .ar-button img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+        .side-image img {
+            max-width: 400px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         footer {
             position: fixed;
@@ -54,13 +58,17 @@
         <p>Exploring sustainable energy solutions through wave power.</p>
     </header>
 
-   
-    <div class="container">
-        <p>View our project model in your space using Augmented Reality:</p>
-        <a href="shatner.usdz" rel="ar" >
-            <img src="thumb.png">
-        </a>
-        <p><small>(Compatible with iOS devices supporting AR)</small></p>
+    <div class="main-content">
+        <div class="container">
+            <p>Tap the 3D model below on an iPhone or iPad to view the object and place it in AR. Or click a model on Mac to download the USDZ file.</p>
+            <a href="shatner.usdz" rel="ar" class="ar-button">
+                <img src="thumb.png" alt="3D model thumbnail">
+            </a>
+            <p><small>(Compatible with iOS devices supporting AR)</small></p>
+        </div>
+        <div class="side-image">
+            <img src="poster" alt="poster">
+        </div>
     </div>
 
     <footer>
